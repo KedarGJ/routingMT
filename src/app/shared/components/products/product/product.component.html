@@ -1,0 +1,11 @@
+<p class="alert alert-info">
+    The Product is <strong>{{prodObj.pname}}</strong> and its status is <strong>{{prodObj.pstatus}}</strong>
+</p>
+
+<button 
+class="btn btn-info" 
+routerLink="editProduct" 
+[queryParamsHandling]="'preserve'"
+>Edit Product</button>
+
+<button class="btn btn-danger ml-3" (click)="onRemoveProd()" >Remove Product</button>
